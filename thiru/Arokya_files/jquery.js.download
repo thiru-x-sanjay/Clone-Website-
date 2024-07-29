@@ -1,0 +1,110 @@
+$(document).ready(function() {
+// Menu scripts    
+	$('.arokya-main-menu.nav li').hover(function() {
+		$(this).find('.menu-name').addClass('opened').css({"visibility":"visible"});
+	}, function(){
+		$(this).find('.menu-name').removeClass('opened').css({"visibility":"hidden"});
+	});
+	
+	
+if ($(window).width() >= 768) {  
+
+	$('.arokya-main-menu.nav li.dropdown').hover(function() {	
+	  $(this).find('.dropdown-menu').stop(true, true).fadeIn();
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).fadeOut();
+	});
+
+}
+	
+/// Safari browser
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  {
+	$(".left.carousel-control").css({"left":"7%"});
+	
+	if ($(window).width() <= 500) {  
+		$('head').append('<link rel="stylesheet" href="css/safari.css" type="text/css" />');
+		/*alert();*/
+		$(".dropdown-menu").css({"position": "static"});
+		$(".spacer_20").css({"height":"5px"});
+		$(".spacer_30").css({"height":"5px"});
+		/*$(".arokya-main-menu .open .dropdown-menu").css({"position":"static"});*/
+	}
+	
+	if ($(window).width() >= 1280) {
+		$(".left.carousel-control").css({"left":"9%"});
+	}
+	//$(".dropdown-menu").css({"position":"static"});
+	$(".arokya-main-menu > li > .dropdown-menu").css({"left":"0", "transform":"translate(0)"});
+	$(".arokya-main-menu > li:nth-child(2) > .dropdown-menu").css({"left":"-40%"});
+	
+}
+
+
+	
+	
+// Nearest village
+   $(".map-List .loc-Map").hover(function(){
+		 var showDivId = $(this).attr("show-id");
+		 
+		 $(".map-List").hide();
+		 $('.map-Expander').show();
+		 //alert(showDivId);
+		
+		if(showDivId === 'KA'){
+			$('.map-Expander #KA').show();
+			$('.map-Expander #TN').hide();
+			$('.map-Expander #TS').hide();
+			$('.map-Expander #AP').hide();
+			$('.map-Expander #MA').hide();
+		}
+		if(showDivId === 'TN'){
+			$('.map-Expander #KA').hide();
+			$('.map-Expander #TN').show();
+			$('.map-Expander #TS').hide();
+			$('.map-Expander #AP').hide();
+			$('.map-Expander #MA').hide();
+		}
+		if(showDivId === 'TS'){
+			$('.map-Expander #KA').hide();
+			$('.map-Expander #TN').hide();
+			$('.map-Expander #TS').show();
+			$('.map-Expander #AP').hide();
+			$('.map-Expander #MA').hide();
+		}
+		if(showDivId === 'AP'){
+			$('.map-Expander #KA').hide();
+			$('.map-Expander #TN').hide();
+			$('.map-Expander #TS').hide();
+			$('.map-Expander #AP').show();
+			$('.map-Expander #MA').hide();
+		}
+		if(showDivId === 'MA'){
+			$('.map-Expander #KA').hide();
+			$('.map-Expander #TN').hide();
+			$('.map-Expander #TS').hide();
+			$('.map-Expander #AP').hide();
+			$('.map-Expander #MA').show();
+		}
+		
+//		$('#'+showDivId).show();
+		 
+		 //if ($('#'+showDivId).hasClass('dis-none')){
+//			$('#'+showDivId).removeClass('dis-none');
+//		 } else {
+//			$('#'+showDivId).addClass('dis-none');
+//		 }
+
+	});
+	
+	$(".map-Expander .loc-Map").mouseleave(function(){
+		$(".map-List").show();
+		$('.map-Expander').hide();
+	});
+	$(".map-Expander").mouseleave(function(){
+		$(".map-List").show();
+		$('.map-Expander').hide();
+	});
+		
+	
+});
+

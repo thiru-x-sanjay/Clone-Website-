@@ -1,0 +1,1377 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	text-wrap:normal;	
+}
+@font-face {
+    font-family: Arial-Round-bold;
+    src: url(../fonts/Arial_Rounded_Bold.ttf);
+}
+@font-face {
+    font-family: GillSans;
+    src: url(../fonts/GillSans.ttc);
+}
+@font-face {
+    font-family: Gill-sans-OT1;
+    src: url(../fonts/Gill_Sans_MT.ttf);
+}
+@font-face {
+    font-family: Alido;
+    src: url(../fonts/Alido.otf);
+}
+@font-face {
+    font-family: Gill_Sans_MT_Bold;
+    src: url(../fonts/Gill_Sans_MT_Bold.ttf);
+}
+@font-face {
+    font-family: Gill_Sans_MT;
+    src: url(../fonts/Gill_Sans_MT.ttf);
+}
+
+html,body{height:100%;color:#231f20;}
+body{
+	font-family: Gill-sans-OT1;
+/*	background-color:#6eb2e3;  */
+}
+.hdr-logo{
+	height:100%;	
+}
+a:focus{
+	outline:none;
+}
+.navbar{
+	padding:20px 0 0;	
+}
+.navbar-inverse{
+	background-color:transparent;
+	border:none;	
+}
+.navbar-brand{
+	padding:0;	
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover{
+	background-color:transparent;
+}
+.arokya-main-menu>li .menu-ico{
+	height:40px;
+	display: block;
+	margin: 0 auto;
+}
+.arokya-main-menu>li{
+	padding:0 5px;
+	cursor:pointer;
+	text-align:center;	
+	background:transparent url(../images/icons/menu-divider.png) right center no-repeat;
+	background-position:0 10%;
+	min-width:100px;
+}
+.arokya-main-menu>li:first-child{
+	background:none;	
+}
+.arokya-main-menu>li>a{
+	padding:0;	
+}
+.arokya-main-menu .menu-name{
+	font-family:Arial-Round-bold !important;
+	text-transform:uppercase;
+	visibility:hidden;
+	padding:0 5px;
+	margin-top:3px;
+	/*min-width:60px;*/
+	font-size:12px;
+}
+.arokya-main-menu .menu-name.opened{
+	background-color:#006738;
+	border-radius:3px;
+	color:#fff;
+}
+
+.arokya-main-menu>li>.dropdown-menu {    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    left: 50%;
+    right: auto;
+    text-align: left;
+    transform: translate(-50%, 0);
+	/*background: transparent url(../images/menu-bg-mob.png) center repeat;*/
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.trans-left-25{
+	transform: translate(-25%, 0);
+}
+
+.arokya-main-menu .dropdown-menu{
+	background:none;
+    margin: 0;
+    border: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	text-align:center !important;
+	min-width:inherit;
+}
+.arokya-main-menu .dropdown-menu>li:first-child a{
+	border-top:none;	
+}
+.arokya-main-menu .dropdown-menu>li:last-child a {
+    border-bottom: none;
+}
+.arokya-main-menu .dropdown-menu>li{
+	text-align:center !important;	
+	padding:0 3px;
+}
+.arokya-main-menu .dropdown-menu>li a{
+	font-size:12px;
+	font-family:Arial-Round-bold;
+	color:#231f20 !important;
+	text-align:center;
+	border-bottom:1px solid #231f20;
+	/*display:inline-block;*/
+	background-color:transparent;
+	text-transform:uppercase;
+	padding:0;
+	margin:0 auto !important;
+}
+.arokya-main-menu .dropdown-menu>li a:hover{
+	color:#ed1c24 !important;	
+}
+
+.img_100{
+	min-width:100%;
+	max-width:100%;	
+}
+.img_h_100{
+	min-height:100%;
+	max-height:100%;	
+}
+.spacer_10{
+	height:10px;
+	clear:both;	
+}
+.spacer_20{
+	height:20px;
+	clear:both;	
+}
+.spacer_30{
+	height:30px;
+	clear:both;	
+}
+.spacer_50{
+	height:50px;
+	clear:both;	
+}
+.padding-0{
+	padding:0 !important;	
+}
+
+/* -------  Home page video  ------ */
+
+.videoWrapper {
+    position: relative;
+    /*padding-bottom: 56.25%;*/
+    padding-bottom: 53%; /* 16:9 */
+    /*padding-top: 25px;*/
+    height: 100%;
+    overflow: hidden;
+  }
+
+  iframe.backgroundVideo {
+    position: absolute;
+    top: -7%;
+    left: 0px;
+    bottom: -6%;
+    right: 0px;
+    width: 100%;
+    height: 115%;    
+  }
+  #video-background {
+    position: fixed;
+    right: 0; 
+    left: 0;
+    bottom: 0px;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;    
+  }
+  .videoPlayBtn{
+    width: 50px;
+    z-index: 99999;
+    position: absolute;
+    top: 48%;
+    left: 47%;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+
+  
+
+/* Slider controls */
+.carousel-caption{
+	left:8%;
+	top:20%;
+	right:inherit;
+	text-shadow:none;	
+}
+.carousel-caption > h1{
+	font-family:Alido !important;
+	font-weight:normal;
+	text-shadow: 2px 1px #231f20;
+}
+.green-txt{
+	color:#008e43;	
+}
+
+.carousel-control.right, .carousel-control.left{
+	background:none;	
+}
+.prev-slide, .next-slide{
+	top:50%;
+	position:absolute;
+}
+.next-slide{
+	right:50%;
+}
+.carousel-control.left {
+	content:"";
+/*	background:transparent url(../images/icons/arrow-left.png) center center no-repeat;
+*/}
+.carousel-control.right {
+	content:"";
+/*	background:transparent url(../images/icons/arrow-right.png) center center no-repeat;
+*/}
+
+.navbar-fixed-top{
+	/*background:transparent url(../images/menu-bg-mob.png) center repeat;*/
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hdr-text{
+	color:#f15a29;
+	float:left;
+	font-size:16px;
+	margin-top:3px;	
+	margin-right:10px;
+}
+.hdr-text-2{
+	color:#231f20;
+	float:left;
+	font-size:16px;
+	margin-top:3px;	
+	margin-right:10px;
+	font-family: Gill_Sans_MT_Bold !important;
+}
+.hdr-text-3{
+	color:#fff;
+	float:left;
+	font-size:16px;
+	margin-top:3px;	
+	margin-right:10px;
+	/*font-family: Gill_Sans_MT !important;*/
+	font-family:Gill_Sans_MT_Bold !important;
+}
+.gdc-hdr-txt{
+	color:#006838;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;	
+	font-weight:bold;
+}
+.content p{
+	font-family:Gill-sans-OT1 !important;	
+	font-size:16px;
+}
+/*  Nearest village */
+.nearest-village-bg{
+	background:transparent url('../images/inner-bg/Arokya-Website-nearest-village-banner.jpg') center center no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	/*background-image:url('../images/inner-bg/arokya-nearst-vIllage.jpg');*/	
+}
+.nearest-village-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	font-size:16px !important;
+	padding:0;
+	bottom:15%;
+	position:fixed;	
+/*	margin-left:5%; */
+	color:#000000 !important;	
+}
+.loc-Map{
+	cursor:pointer;
+	padding:0;	
+}
+.nearest-village-bg .content h4{
+	text-align:center;
+	color:#000;
+}
+.dis-none{
+	display:none;
+}
+.map-Expander{
+	display:none;	
+}
+
+/*  Milk page script */
+.milk-bg{
+	background-image:url('../images/inner-bg/Arokya-Milk-Full-Cream-Milk-Web-New.jpg');	
+}
+.milk-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+
+/* Process page script */
+.process-bg{
+	background-image:url('../images/inner-bg/process-bg.jpg');	
+}
+.process-bg a {
+    color: #ed1c24;
+}
+.process-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:10%;
+	top:14%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+.process-content>p{
+	float:left;
+	width:87%;
+}
+.process-content>span{
+	width:10%;
+	float:left;
+	position:relative;
+}
+.care-tabs{
+	margin-left:0;	
+}
+.care-tabs>li{
+	background-color:#006738;
+	display:inline-block;
+}
+.care-tabs>li>a{
+	padding:10px 20px;
+	font-family:Arial;	
+	color:#fff;	
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:600;
+}
+.care-tabs>li.active{
+	background-color:#fff;	
+}
+.care-tabs>li.active>a{
+	color:#006738;
+}
+.processThumbsDiv{	
+	background-color:#fff;
+	display:inline-block;
+	padding:2px;
+	float:left;
+}
+.processThumbsDiv .procThumb{
+	width:20%;
+	float:left;
+}
+
+.processThumbsDiv img{
+	float:left;
+	border:2px solid #fff;
+}
+
+
+
+/*  Toned Milk page script */
+.toned-milk-bg{
+	background-image:url('../images/inner-bg/Arokya-Milk-Toned-Milk-Web.jpg');	
+}
+.toned-milk-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:10%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+
+/*  Toned Milk page script */
+.double-toned-milk-bg{
+	background-image:url('../images/inner-bg/Arokya-Milk-Double-Toned-Milk-Web.jpg');	
+}
+.double-toned-milk-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:10%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+
+/*  Toned Milk page script */
+.standardized-milk-bg{
+	background-image:url('../images/inner-bg/Arokya-Milk-Standardized-Milk-Web.jpg');	
+}
+.standardized-milk-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+
+
+/* Curd BG */
+.curd-bg{
+	background-image:url('../images/inner-bg/Arokya-Curd-Web-New.jpg');	
+}
+.curd-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+	width:80%;
+}
+/* Paneer BG */
+.paneer-bg{
+	background-image:url('../images/inner-bg/milk-bg_Paneer.png');	
+}
+.paneer-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+	width:80%;
+}
+
+
+/* procurement-and-quality */
+.procurement-bg{
+	background-image:url('../images/inner-bg/procurement-bg.jpg');	
+}
+.procurement-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:20%;
+	position:fixed;	
+	color:#fff !important;	
+	font-size:16px;
+}
+.procurement-bg a{
+	/*color:#ffc874;	*/
+	color: #ed1c24;
+}
+
+
+
+/* our-story */
+.our-story-bg{
+	background-image:url('thiru\ cow.png');	
+}
+.our-story-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-right:8%;
+	left:10%;
+	top:22%;
+	position:fixed;	
+	color:#fff !important;	
+	font-size:16px;
+}
+
+
+
+/* cattle-care */
+.cattle-care-bg{
+	background-image:url('thiru\Arokya_files\WhatsApp Image 2024-07-26 at 14.46.22_f5910cf5.jpg');	
+}
+.cattle-care-bg .hdr-text-3{
+	font-weight:600;
+	letter-spacing:0.5px;
+}
+.cattle-care-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-right:8%;
+	left:5%;
+	top:40%;
+	position:fixed;	
+	color:#fff !important;	
+	font-size:16px;
+}
+
+
+/* consumer-care */
+.consumer-care-bg{
+	background-image:url('../images/inner-bg/consumer-care-bg.jpg');	
+}
+.consumer-care-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-right:8%;
+	top:35%;
+	left:5%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+
+
+
+/*  TV ad */
+.tv-ad-bg{
+	background-image:url('../images/inner-bg/tv-ad.jpg');	
+}
+.tv-ad-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	bottom:5%;
+	position:fixed;	
+	color:#fff !important;	
+	text-align:center;
+}
+.yt_video_container{
+	height:380px;
+	text-align:center;
+	margin-top:10%;
+}
+.yt_video{
+	width:60%;
+	margin:0 auto;
+	height:100%;	
+}
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+
+.map-List, .map-Expander{
+	margin-right:15px;	
+}
+
+
+/* ROBUST COLD CHAIN ##########################  */
+/*::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}*/
+.robustContentDiv::-webkit-scrollbar-track, .robustContentDiv::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	/*background-color: #F5F5F5;*/
+}
+.robustContentDiv::-webkit-scrollbar, .robustContentDiv::-webkit-scrollbar
+{
+	width: 5px;
+	/*background-color: #F5F5F5;*/
+}
+
+.robustContentDiv::-webkit-scrollbar-thumb, .robustContentDiv::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #008e43;
+}
+.robustContentDiv{
+	max-height: 360px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0 10px 0 0;
+	width: 100%;
+}
+.robustContentDiv p{
+	/*float: left;*/
+	/*text-align: justify;*/
+}
+.robustContentDiv .robustThumb{	
+	margin: 0 5px 10px 0;
+}
+.robustContentDiv .robustThumbR{
+	margin: 0 0 5px 10px;
+}
+
+
+
+/*  Recipe page script */
+.recipe-bg{
+	background-image:url('../images/inner-bg/recipe-bg.jpg');	
+}
+.recipe-bg .content{
+	font-family:Gill-sans-OT1 !important;
+	padding:0;
+	padding-left:8%;
+	top:18%;
+	position:fixed;	
+	color:#231f20 !important;	
+	font-size:16px;
+}
+.recipe-menu .panel, .recipe-menu .panel-heading, .recipe-menu .panel-title, .recipe-menu .list-group-item, .recipe-menu .panel-heading{
+	padding:0;
+	background-color:transparent;
+	border:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+.recipe-menu-div, .recipe-content-div{
+	max-height:300px;
+	overflow:auto;	
+}
+.recipe-menu-div::-webkit-scrollbar-track, .recipe-content-div::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	/*background-color: #F5F5F5;*/
+}
+.recipe-menu-div::-webkit-scrollbar, .recipe-content-div::-webkit-scrollbar
+{
+	width: 5px;
+	/*background-color: #F5F5F5;*/
+}
+
+.recipe-menu-div::-webkit-scrollbar-thumb, .recipe-content-div::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #008e43;
+}
+
+
+/* curd-scroll */
+.curd-menu-div{
+	max-height:200px;
+	overflow:auto;	
+}
+.curd-menu-div::-webkit-scrollbar-track, .curd-menu-div::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	/*background-color: #F5F5F5;*/
+}
+.curd-menu-div::-webkit-scrollbar, .curd-menu-div::-webkit-scrollbar
+{
+	width: 5px;
+	/*background-color: #F5F5F5;*/
+}
+
+.curd-menu-div::-webkit-scrollbar-thumb, .curd-content-div::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #008e43;
+}
+
+/* End of curd-scroll */
+
+
+
+
+.recipe-menu .panel-body{
+	padding:0;	
+}
+.recipe-menu .panel-title{
+	margin-bottom:5px;	
+}
+.recipe-menu .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+	border-top:none !important;	
+}
+.recipe-menu .panel-title{
+	color:#006838;
+	font-weight:bold;
+	text-transform:uppercase;	
+}
+.recipe-menu .list-group{
+	margin-bottom:0;
+	padding-bottom:10px;	
+}
+.recipe-menu .list-group-item{
+	padding: 2px 15px;
+	margin-left:10px;
+	border:none;
+	background:transparent url(../images/icons/bullet.png) left center no-repeat;
+}
+.recipe-menu .list-group-item:first-child, .recipe-menu .list-group-item:last-child{
+	border-radius:0px;	
+}
+
+.recipe-menu .list-group-item.active{
+	background-color:transparent;	
+}
+.recipe-menu .list-group-item a{
+	color:#231f20;
+	text-decoration:none;	
+}
+.recipe-menu .list-group-item.active a{
+	color:#006738;	
+}
+.recipe-inner-tabs li{
+	margin-left:10%;
+	background:transparent url(../images/icons/tab-ilst-icon.png) left center no-repeat;
+}
+.recipe-inner-tabs li a{
+	padding-left:15px;
+	color:#231f20;	
+	text-decoration:none;
+}
+.recipe-inner-tabs li.active a{
+	color:#006838;
+}
+.recipe-hdr{
+	font-weight:bold;	
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px), @media only screen and (min-device-width:769px) and (max-device-width:991px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+	.navbar-collapse.active{
+		display:block !important;
+	}	
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }	
+	.navbar-toggle {
+		background-color: #006738 !important;
+		padding: 5px;
+		margin: 8px 15px 0 0;
+		border-radius: 6px;
+	}
+	
+}
+
+/*@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {*/
+@media only screen and (min-width: 767px) and (max-width: 768px), @media only screen and (min-device-width: 767px) and (max-device-width: 768px){
+	.navbar-brand{
+		height:40px !important;
+	}	
+	.arokya-main-menu > li{
+		padding:0;	
+		min-width:98px;
+	}
+	.fill {
+		height:100% !important;
+		background-position:35%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+@media only screen and (max-width: 1024px){
+	.care-tabs>li>a{
+		    padding: 10px 2px;	
+	}
+}
+
+@media only screen and (min-width: 1024px), @media screen and (min-device-width: 1024px), @media screen and (min-width: 1024px) {
+	.fill {
+		width: 100%;
+		/*height: 100%;*/
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	
+}
+@media only screen and (min-width: 300px) and (max-width: 767px), @media only screen and (min-device-width: 300px) and (max-device-width: 767px), @media screen and (min-width: 300px) and (max-width: 767px) {
+	body{
+		background-color:#6eb2e3;
+	}
+	.hdr-logo {
+		height: 95%;
+		margin-left: 15px;
+		padding-top:5%;
+	}
+	.navbar{
+		min-height:30px;	
+	}
+	.navbar-brand{
+		height:40px;	
+	}
+	.map-Expander .width-100px{
+		width:100% !important;	
+	}
+/*	.navbar-fixed-top{
+		background:transparent url(../images/menu-bg-mob.png) center repeat;
+	}
+*/	
+	.navbar-toggle{
+		background-color:#006738 !important;	
+		padding:5px;
+		margin:8px 15px 0 0;
+		border-radius:6px;
+	}
+	.arokya-main-menu .menu-name{
+		visibility:visible !important;
+		font-size:14px;
+		color:#fff;	
+		background-color:#006738;
+		border-radius:3px;
+	}
+	.arokya-main-menu > li{
+		margin-bottom:15%;	
+	}
+	.arokya-main-menu .dropdown-menu > li a{
+		border-bottom: 1px solid #eee;	
+	}
+	.carousel-caption{
+		/*left:10%;*/
+		/*top:inherit;	*/
+		margin:0 5%;		
+	}
+	
+	.arokya-main-menu > li > .dropdown-menu{
+		background:none;	
+	}
+	
+	.carousel-control>.next-slide, .carousel-control>.prev-slide{
+		width:60%;	
+	}
+	p {
+		margin: 0 0 5px;
+	}
+	.back-bg-cow{
+		background-position:72% !important;	
+/*		-webkit-background-size: 250% 100%;
+		-moz-background-size: 250% 100%;
+*/		background-size: 300% 100% !important;
+		-o-background-size: 250% 100%;
+	}
+	.back-bg-lorry{
+		background-position:72% !important;	
+	}
+	.carousel-caption{
+		top:12%;	
+	}
+	.carousel-caption>h1{
+		color:#fff;
+		font-size:31px;
+		text-shadow: 2px 1px #231f20;
+		text-align:center;
+	}
+	.carousel-inner .fill {
+		width: 100%;
+		height: 100%;
+		background-position: 60%;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		background-size: cover !important;
+		-o-background-size: cover !important;
+	}
+	.our-story-bg{
+		background:#7eaddd url('../images/mobile-bg/our-story.jpg') left bottom no-repeat;			
+	}
+	.our-story-bg p{
+		font-size:75%;	
+	}
+	.our-story-bg .content{
+		padding-left:0;	
+	}
+	.procurement-bg{
+		background:#99ab40 url('../images/mobile-bg/procurement-bg.jpg') left bottom no-repeat;			
+	}
+	.procurement-bg p{
+		font-size:75%;	
+	}
+	.procurement-bg .content{
+		padding-left:0;	
+	}
+	.procurement-bg .hdr-text-3{
+		font-size:75%;
+		margin-bottom:6px;	
+	}
+	.spacer_20, .spacer_30{
+		height:10px;	
+	}
+	.nearest-village-bg{
+		background:#ecf3f8 url('../images/mobile-bg/arokya-nearst-vIllage.jpg') left bottom no-repeat;			
+	}
+	.nearest-village-bg p{
+		font-size:75%;
+		color:#231f20;	
+	}
+	.nearest-village-bg .content{
+		padding-left:0;	
+	}
+	.nearest-village-bg h4{
+		font-size:85%;
+		color:#231f20;
+		text-align:center;
+	}
+	.nearest-village-bg .spacer_30{
+		height:5px;	
+	}
+	
+	.milk-bg{
+		background:#ecf3f8 url('../images/mobile-bg/Arokya-Milk-Full-Cream-Milk-Mobile-New.jpg') left bottom no-repeat;			
+	}
+	.process-bg{
+		background:#ecf3f8 url('../images/mobile-bg/process-bg.jpg') left bottom no-repeat;			
+	}
+	.process-bg p{
+		font-size:75%;
+		color:#231f20;	
+	}
+	.milk-bg p{
+		font-size:75%;
+		color:#231f20;	
+	}
+	.milk-bg .content{
+		padding-left:0;	
+	}
+	.milk-bg h1, .milk-bg .text-capitalize{
+		font-size:85%;
+		margin-bottom:5px;
+	}
+	.milk-bg .spacer_20{
+		height:5px;	
+	}
+	.milk-bg .list-unstyled li{
+		font-size:75%;
+	}
+	
+	.process-bg .content{
+		padding-left:0;	
+	}
+	.process-bg h1, .milk-bg .text-capitalize{
+		font-size:85%;
+		margin-bottom:5px;
+	}
+	.process-bg .spacer_20{
+		height:5px;	
+	}
+	.process-bg .list-unstyled li{
+		font-size:75%;
+	}
+	
+	
+	.recipe-bg{
+		background:#ecf3f8 url('../images/mobile-bg/recipe-bg.jpg') left bottom no-repeat;			
+	}
+	.curd-bg{
+		   background-image: url('../images/inner-bg/Arokya-Curd-Mobile-New.jpg') left bottom no-repeat;
+		   background-size:cover;
+		   background-image: url('../images/inner-bg/Arokya-Curd-Mobile-New.jpg');
+	}
+	.curd-bg p{
+		font-size:75%;
+		color:#231f20;	
+	}
+	.fill.curd-bg{
+		height: 100% !important;
+		background-position: 50% !important;
+	}
+	
+	.double-toned-milk-bg{
+		background:#ecf3f8 url('../images/mobile-bg/Arokya-Milk-Double-Toned-Milk-Mobile.jpg') center center no-repeat;					
+	}	
+	.standardized-milk-bg{
+		background:#ecf3f8 url('../images/mobile-bg/Arokya-Milk-Standardized-Milk-Mobile.jpg') left bottom no-repeat;			
+	}	
+	.toned-milk-bg{
+		background:#ecf3f8 url('../images/mobile-bg/Arokya-Milk-Toned-Milk-Mobile.jpg') left bottom no-repeat;			
+	}	
+	.cattle-care-bg{
+		background:#fff url('../images/mobile-bg/cattle-care.jpg') left bottom no-repeat;			
+	}
+	.consumer-care-bg{
+		background:#fff url('../images/mobile-bg/consumer-care.jpg') left bottom no-repeat;			
+	}
+	.paneer-bg{
+		background:#fff url('../images/mobile-bg/milk-bg_Paneer-mob.png') center bottom no-repeat;			
+	}
+	
+	.cattle-care-bg .content, .cattle-care-bg .hdr-text-3{
+		color:#231f20 !important;	
+	}
+	.fill.consumer-care-bg{
+		height:130% !important;	
+	}
+	.content{
+		padding-left:0 !important;
+		position:absolute !important;
+		top:11% !important;	
+		width:93%;
+	}
+	.hdr-text, .hdr-text-2, .hdr-text-3, .text-capitalize{
+		font-size:85% !important;	
+	}
+	p, .list-unstyled>li{
+		font-size:75% !important;	
+	}
+	
+	.hdr-text, .hdr-text-2, .hdr-text-3{
+		font-size:85% !important;
+		margin-bottom:5px !important;	
+	}
+	.curd-bg h1, .curd-bg .text-capitalize{
+		font-size:85%;
+		margin-bottom:5px;
+	}
+	.curd-bg .spacer_20{
+		height:5px;	
+	}
+	.curd-bg .list-unstyled li{
+		font-size:66%;
+	}
+	
+	.mob-caption{
+		display: block ;
+		clear: both;
+		font-size:10px;
+	}
+	.fill {
+		width:100% !important;
+		-webkit-background-size: 100% 100% !important;
+		-moz-background-size: 100% 100% !important;
+		background-size: 100% 100% !important;
+		-o-background-size: 100% 100% !important;
+		background-repeat: no-repeat;
+	}
+	.width-45{
+		width:45%;	
+	}
+	.nearest-village-bg, .milk-bg, .process-bg, .curd-bg, .procurement-bg, .our-story-bg, .tv-ad-bg{
+		padding-top:17%;
+	}
+	.nearest-village-bg .content{
+		position:inherit;
+	}
+	.milk-bg .content{
+		position:inherit;
+	}
+	.process-bg .content{
+		position:inherit;
+	}
+	.curd-bg .content{
+		position:inherit;
+	}
+	.procurement-bg .content{
+		position:inherit;
+	}
+	.our-story-bg .content{
+		position:inherit;
+	}
+	.tv-ad-bg .content{
+		position:inherit;
+	}
+	.tv-ad-bg .spacer_20{
+		height:40px;	
+	}
+	.navbar-collapse{
+		/*background-image:url(../images/inner-bg/drop-bg.png);*/
+		background-color:#fff;
+	}
+	.yt_video_container{
+		height:260px;
+		text-align:center;
+		margin-top:1%;
+	}
+	.yt_video{
+		width:100%;
+		margin:0 auto;
+		height:100%;	
+	}
+	.lSAction > a{
+		height:91% !important;
+	}
+	.lSAction > .lSNext {
+    	background-position: -23px 0 !important;
+		right:0 !important;
+	}
+	.lSAction > .lSPrev {
+		background-position: 0 !important;
+		left:0 !important;
+	}	
+	.width-100px{
+		width:100px !important;
+	}
+	.width-170px{
+		width:170px !important;
+	}	
+	.care-tabs>li{
+		display:block;	
+		margin-bottom:5px;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px), @media only screen and (min-device-width: 480px) and (max-device-width: 767px), @media screen and (min-width: 640px) and (max-width: 767px) {
+	.carousel-control > .next-slide, .carousel-control > .prev-slide {
+		width: 40% !important;
+	}
+	.nearest-village-bg, .milk-bg, .process-bg, .curd-bg, .procurement-bg, .our-story-bg, .tv-ad-bg{
+		padding-top:12%;
+	}
+	.content{
+		width:70%;	
+		padding-bottom:10%;
+		top:18% !important;
+	}
+	.curd-bg .content{
+		width:90%;	
+		padding-left:10% !important;
+		padding-bottom:10%;
+		top:18% !important;
+	}
+	.spacer_20, .spacer_30{
+		height:5px !important;	
+	}
+	.width-100px{
+		width:100px !important;
+	}
+	.hdr-text, .hdr-text-2, .hdr-text-3{
+		margin-bottom:3px !important;	
+	}
+	.mob-caption{
+		display:inline-block;	
+	}
+	.sidebar-offcanvas{
+		margin-top:9.5%;	
+	}
+	
+	.standardized-milk-bg .content, .toned-milk-bg .content, .double-toned-milk-bg .content{
+		padding-left:1%;
+		position: absolute;	
+	}
+	
+	.procurement-bg.content{
+		width:80%;
+	}
+	.toned-milk-bg .content{
+		width:75%;
+	}
+	.content p{
+		font-size:70%;	
+	}
+	.content .text-capitalize{
+		font-size:80%;	
+	}
+	.content .list-unstyled>li{
+		font-size:70%	;
+	}
+	.fill.our-story-bg {
+		width:100% !important;
+		height:105% !important;
+		background-position: 74% !important;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		background-size: cover !important;
+		-o-background-size: cover !important;
+		background-repeat: no-repeat;
+	}
+	.fill.procurement-bg {
+		width: 100% !important;
+		height: 180% !important;
+		background-position: 75% !important;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		background-size: cover !important;
+		-o-background-size: cover !important;
+		background-repeat: no-repeat;
+	}	
+	.fill.nearest-village-bg{
+		background-position: 36% !important;
+	}
+	.fill.curd-bg{
+		height: 133% !important;
+		background-position: 50% !important;
+	}
+	.curd-bg .content{
+		padding-left: 1% !important;	
+	}
+	.fill.milk-bg{
+		height: 126% !important;
+		background-position: 50% !important;
+	}
+	.fill.process-bg{
+		background-position: 50% !important;
+	}
+	
+	.fill.tv-ad-bg{
+		height:140% !important;	
+	}
+	
+	.video_thumbs_slider li:first-child{
+		margin-left:5px !important;	
+	}
+	.our-story-bg{
+		background:#7eaddd url('../images/inner-bg/our-story.jpg') left bottom no-repeat;			
+	}
+	.procurement-bg{
+		background:#99ab40 url('../images/inner-bg/procurement-bg.jpg') left bottom no-repeat;			
+	}
+	
+	.nearest-village-bg{
+		background:#ecf3f8 url('../images/inner-bg/arokya-nearst-vIllage.jpg') left bottom no-repeat;			
+	}
+	
+	.milk-bg{
+		background:#ecf3f8 url('../images/inner-bg/banner_3.jpg') left bottom no-repeat;			
+	}
+	.process-bg{
+		background:#ecf3f8 url('../images/inner-bg/process-bg.jpg') left bottom no-repeat;
+		height:550px;		
+	}
+	
+	.recipe-bg{
+		background:#ecf3f8 url('../images/inner-bg/recipe-bg.jpg') left bottom no-repeat;			
+	}
+	
+	.curd-bg{
+		background:#ecf3f8 url('../images/inner-bg/curd-bg.jpg') left bottom no-repeat;			
+	}
+	
+	.double-toned-milk-bg{
+		background:#ecf3f8 url('../images/inner-bg/banner_4.jpg') left bottom no-repeat;			
+	}
+	
+	.standardized-milk-bg{
+		background:#ecf3f8 url('../images/inner-bg/banner_1.jpg') left bottom no-repeat;			
+	}
+	
+	.toned-milk-bg{
+		background:#ecf3f8 url('../images/inner-bg/banner_2.jpg') left bottom no-repeat;			
+	}
+	
+	.cattle-care-bg{
+		background:#fff url('../images/inner-bg/cattle-care-bg.jpg') left bottom no-repeat;			
+	}
+	.cattle-care-bg .content {
+		width: 50%;
+		top: 45% !important;
+	}	
+	.fill.cattle-care-bg{
+		height:140% !important;	
+	}
+	.consumer-care-bg{
+		background:#fff url('../images/inner-bg/consumer-care-bg.jpg') left bottom no-repeat;			
+	}
+	.fill.consumer-care-bg{
+		height: 130% !important;
+		background-position: 64% !important;	
+	}
+	.consumer-care-bg .content {
+		width: 47%;
+	}	
+	
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2200px), @media only screen and (min-device-width: 1600px) and (max-device-width: 2200px), @media screen and (min-width: 1600px) and (max-width: 2200px) {
+    .map-List, .map-Expander{
+		width:80%;  
+	}
+	.content.col-sm-6{
+		width:46%;	
+	}
+}
+@media only screen and (min-width: 1900px) and (max-width: 2200px), @media only screen and (min-device-width: 1900px) and (max-device-width: 2200px), @media screen and (min-width: 1900px) and (max-width: 2200px) {
+	.fill.curd-bg	{
+/*		height:105%;	*/
+
+	}
+	.our-story-bg .content{
+		width:45% !important;
+		position:absolute;	
+	}
+	.curd-bg .content{
+		width:70% !important;
+		position:absolute;	
+	}
+	.cattle-care-bg .content{
+		width:35% !important;
+		position:absolute;	
+	}
+	.consumer-care-bg .content{
+		width:39% !important;
+		position:absolute;	
+	}
+}
+
+
+li.arokoyo-home-logo {
+    background: transparent;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+.care-tabs>li {
+    margin-bottom: 10px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.yt_video_container {
+    margin-top: 20%;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.nearest-village-bg {
+    background: #ecf3f8 url(../images/mobile-bg/Arokya-Website-nearest-village-banner.jpg) bottom right no-repeat;
+    height: 700px;
+    background-size: contain;
+}
+.process-bg .content {
+    font-size: 15px;
+}
+.tab-content p a img {
+    margin-top: 5px;
+}
+
